@@ -28,4 +28,4 @@ Enter Reddit profile URL or username: https://www.reddit.com/user/kojied/
 
 ### 6. Output
 The generated user persona will be saved in the output/ folder as:
-output/user_persona_<username>.txt
+"output/user_persona_<username>.txt"
