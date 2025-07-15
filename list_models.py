@@ -1,4 +1,3 @@
-# list_models.py
 import openai
 import os
 from dotenv import load_dotenv
