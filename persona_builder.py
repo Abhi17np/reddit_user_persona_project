@@ -27,7 +27,7 @@ import requests
 def generate_persona(prompt):
     api_key = os.getenv("OPENROUTER_API_KEY")
     if not api_key:
-        raise Exception("❌ OPENROUTER_API_KEY not found. Check your .env file.")
+        raise Exception("OPENROUTER_API_KEY not found. Check your .env file.")
 
     url = "https://openrouter.ai/api/v1/chat/completions"
     
@@ -38,7 +38,7 @@ def generate_persona(prompt):
     }
 
     payload = {
-        "model": "mistralai/mixtral-8x7b-instruct",  # ✅ Valid model name
+        "model": "mistralai/mixtral-8x7b-instruct", 
         "messages": [
             {"role": "user", "content": prompt}
         ]
