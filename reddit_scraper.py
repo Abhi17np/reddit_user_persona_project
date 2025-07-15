@@ -19,12 +19,12 @@ def scrape_user_content(username, limit=20):
         for submission in user.submissions.new(limit=limit):
             posts.append(f"[POST] {submission.title}\n{submission.selftext}")
     except Exception as e:
-        print(f"⚠️ Could not fetch submissions: {e}")
+        print(f" Could not fetch submissions: {e}")
 
     try:
         for comment in user.comments.new(limit=limit):
             comments.append(f"[COMMENT] {comment.body}")
     except Exception as e:
-        print(f"⚠️ Could not fetch comments: {e}")
+        print(f" Could not fetch comments: {e}")
 
     return posts + comments
