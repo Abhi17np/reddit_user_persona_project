@@ -16,9 +16,7 @@ This file stores your secret API keys required to run the project securely.
 It is **not committed to GitHub** for safety.
 
 #### Required keys inside `.env`:
-REDDIT_CLIENT_ID=your_reddit_client_id  
-REDDIT_CLIENT_SECRET=your_reddit_client_secret
-OPENROUTER_API_KEY=your_openrouter_api_key
+Refer to the .env.example
 
 ### 4. Run the script
 python main.py
