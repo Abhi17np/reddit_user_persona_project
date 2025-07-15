@@ -1,5 +1,3 @@
-# utils.py
-
 import re
 
 def clean_text(text: str) -> str:
